@@ -1,0 +1,13 @@
+.myinput {
+    background-color: #dbdbdb;
+    color: #165a3d;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    margin-bottom: 23px;
+}
+.myinput::placeholder {
+    color: #165a3d;
+    text-align: center;
+    text-transform: uppercase;
+}

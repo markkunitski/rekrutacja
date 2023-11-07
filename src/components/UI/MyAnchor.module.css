@@ -1,0 +1,11 @@
+.myanchor {
+  font-weight: 700;
+  color: #165a3d;
+  transition: .15s ease;
+  font-size: .8rem ;
+  cursor: pointer;
+}
+.myanchor:hover {
+    color: #008e50;
+  }
+  

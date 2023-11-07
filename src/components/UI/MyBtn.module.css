@@ -1,0 +1,14 @@
+.mybtn {
+    background-color: #a6b33d;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 4px 3rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    transition: .15s ease;
+}
+.mybtn:hover {
+    transform: translateY(-2px);
+}

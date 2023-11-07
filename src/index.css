@@ -1,13 +1,91 @@
-body {
+:root * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  color: #fff;
+}
+.form__parent__hero {
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+.form__parent {
+  height: 100vh;
+}
+.form_container {
+  background: url("/public/background.png") no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+.myform {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 70px;
+  background-color: #f7f6f7;
+  width: 556px;
+}
+.myform p,
+.myform label {
+  color: #165a3d;
+}
+.myform label {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+.myform button {
+  align-self: center;
+}
+.myform .errors {
+  position: absolute;
+  top: -18px;
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.myform .has-error {
+  background-color: rgb(255, 214, 214);
+}
+.myform__bottom__small {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+.form_container .message {
+  position: absolute;
+  top: 50%;
+  padding: 2rem 5rem;
+  max-width: 400px;
+  background-color: rgba(70, 70, 70, 0.9);
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* CHECKBOXES */
+.custom-checkbox {
+  appearance: none;
+  background-color: #dcdcdc;
+  border: 1px solid transparent;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.15s ease;
+}
+
+.custom-checkbox:checked::before {
+  content: "✔";
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  color: #a6b33d;
+  font-size: 22px;
+}
+
+.custom-checkbox:focus {
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.custom-checkbox:disabled {
+  background-color: #ededed;
+  cursor: not-allowed;
 }
