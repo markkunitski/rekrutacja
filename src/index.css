@@ -89,3 +89,12 @@
   background-color: #ededed;
   cursor: not-allowed;
 }
+@media (max-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+  .myform {
+    width: auto;
+    padding: 25px 30px;
+  }
+}
