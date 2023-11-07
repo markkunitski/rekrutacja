@@ -39,7 +39,14 @@ function App() {
   const onSubmit = async (e) => {
     e.preventDefault();
     // Validate form again and make POST request
-    const errorFields = Object.keys(form).filter((key) => form[key] === "");
+    const errorFields = Object.keys(form).filter(
+      (key) =>
+        form[key] === "" &&
+        key !== "phone" &&
+        key !== "agreement_call" &&
+        key !== "agreement_sms"
+    );
+
     if (errorFields.length > 0) {
       setErrors(
         errorFields.reduce(
